@@ -2,75 +2,187 @@ class svm:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training SVM model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with SVM model for input:", input_data)
-        return "SVM Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
 
 class knn:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training KNN model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with KNN model for input:", input_data)
-        return "KNN Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
     
 class decision_tree:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training Decision Tree model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with Decision Tree model for input:", input_data)
-        return "Decision Tree Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
     
 class random_forest:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training Random Forest model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with Random Forest model for input:", input_data)
-        return "Random Forest Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
     
 class xgboost:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training XGBoost model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with XGBoost model for input:", input_data)
-        return "XGBoost Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
     
 class lightgbm:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training LightGBM model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with LightGBM model for input:", input_data)
-        return "LightGBM Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
     
 class catboost:
     def __init__(self):
         pass
 
-    def train(self, data):
-        print("Training CatBoost model with data:", data)
+    def train(self, x, y):
+        '''
+        x: training data
+        y: training labels
+        '''
 
+    def save(self, filepath):
+        print("Saving model to:", filepath)
+
+    def load(self, filepath):
+        print("Loading model from:", filepath)
+
+    def evaluate(self, x, y):
+        ''''
+        x: test data
+        y: test labels
+        '''
+        return 'accuracy, precision, recall, f1-score'
+    
     def predict(self, input_data):
-        print("Predicting with CatBoost model for input:", input_data)
-        return "CatBoost Prediction"
+        print("Predicting with model for input:", input_data)
+        return '[0, 1, 0, 1, 1, 1, 0,....]'
