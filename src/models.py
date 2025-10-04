@@ -19,11 +19,11 @@ class svm:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'
 
 class knn:
     def __init__(self):
@@ -46,11 +46,11 @@ class knn:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'
     
 class decision_tree:
     def __init__(self):
@@ -73,11 +73,11 @@ class decision_tree:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'
     
 class random_forest:
     def __init__(self):
@@ -100,11 +100,11 @@ class random_forest:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'
     
 class xgboost:
     def __init__(self):
@@ -127,11 +127,11 @@ class xgboost:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'
     
 class lightgbm:
     def __init__(self):
@@ -154,11 +154,11 @@ class lightgbm:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'
     
 class catboost:
     def __init__(self):
@@ -181,8 +181,8 @@ class catboost:
         x: test data
         y: test labels
         '''
-        return 'accuracy, precision, recall, f1-score'
+        return "{accuracy:, precision:, recall:, f1-score:}"
     
     def predict(self, input_data):
         print("Predicting with model for input:", input_data)
-        return '[0, 1, 0, 1, 1, 1, 0,....]'
+        return '0 or 1'

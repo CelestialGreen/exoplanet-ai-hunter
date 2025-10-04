@@ -1,7 +1,7 @@
 import os
 import sys
-
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")
+
 from src.models import svm, knn, decision_tree, random_forest, xgboost, lightgbm, catboost
 from src.dataset import exoplanet_dataset
 from utils.loader import load_env
@@ -9,7 +9,7 @@ from utils.loader import load_env
 ENV = load_env()
 
 
-def train():
+def evaluate():
     dataset = exoplanet_dataset(root=ENV["exoplanet_dataset_path"], train=True)
 
     models = {
@@ -23,14 +23,15 @@ def train():
     }
 
     for model_name, model in models.items():
-        print(f"\n--- Training {model_name} model ---")
-        model.train(dataset.data, dataset.labels)
+        print(f"\n--- Evaluating {model_name} model ---")
         path = os.path.join("weights/ml", model_name)
-        dir_path = os.path.dirname(path)
-        if not os.path.exists(dir_path):
-            os.makedirs(dir_path)
-        model.save(path)
+        model.load(path)
+        results = model.evaluate(dataset.data, dataset.labels)
+        print(f"Results for {model_name}:")
+        print('Accuracy', results["accuracy"])
+        print('Precision', results["precision"])
+        print('Recall', results["recall"])
+        print('F1-Score', results["f1-score"])
 
 if __name__ == "__main__":
-    train()
-
+    evaluate()
