@@ -1,2 +1,4 @@
 requirements.txt
-datas\summary
+datas/summary
+*.csv
+*.ipynb
